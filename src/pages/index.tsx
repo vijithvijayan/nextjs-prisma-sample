@@ -30,7 +30,7 @@ export default function Home() {
       <div className="border rounded p-8 flex justify-between items-center max-w-2xl">
         <div className="flex-col items-center">
           <Image
-            src={firstPokemon.data?.sprites.front_default as string}
+            src={firstPokemon.data?.spriteUrl as string}
             alt="pokemon image"
             width={256}
             height={256}
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="p-8">Vs</div>
         <div className="flex-col  items-center">
           <Image
-            src={secondPokemon.data?.sprites.front_default as string}
+            src={secondPokemon.data?.spriteUrl as string}
             alt="pokemon image"
             width={256}
             height={256}
