@@ -1,6 +1,7 @@
 import { getOptionsForVote } from "@/utils/getRandomPokemon";
 import { trpc } from "@/utils/trpc";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -66,6 +67,9 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <Link href={"/results"}>
+        <span className="text-blue-500">Results</span>
+      </Link>
     </div>
   );
 }
